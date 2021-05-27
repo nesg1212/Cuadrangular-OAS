@@ -26,5 +26,5 @@ Al iniciar la aplicacion se despliega la ventana de resultados, donde se mostrar
 Para registrar equipos pulse en el botón registro en la parte superior derecha. Se desplegara un formulario para registrar el nombre del equipo, en este proceso se asignaran todas sus estadisticas en cero.
 ![Ingreso](https://github.com/nesg1212/Cuadrangular-OAS/blob/main/Registro.png)
 
-Para ingresar los resultados de los partidos puede registrar las victorias, derrotas o empates de cada equipo dando clic en su respectivo botón editar. En esta pestaña se desplegara un formulario con los datos actuales del equipo, puede actualizar o eliminar el equipo.
+Para ingresar los resultados de los partidos puede registrar las victorias, derrotas o empates de cada equipo dando clic en su respectivo botón editar. En esta pestaña se desplegara un formulario con los datos actuales del equipo, puede actualizar o eliminar el equipo. Puede escribir los números de los resultados, o incrementar con las flechas de la derecha del label. Los campos numericos solo admiten este tipo de dato.
 ![alt text](https://github.com/nesg1212/Cuadrangular-OAS/blob/main/Editar.png)
