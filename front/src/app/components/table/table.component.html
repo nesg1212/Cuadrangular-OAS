@@ -1,0 +1,36 @@
+
+
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        
+        <th scope="col">Nombre</th>
+        <th scope="col">Ganados</th>
+        <th scope="col">Empatados</th>
+        <th scope="col">Perdidos</th>
+        <th scope="col">Puntos</th>
+        <th scope="col">Modificar</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let team of data;let i = index;">
+        
+        <td>{{team.name}}</td>
+        <td>{{team.wins}}</td>
+        <td>{{team.ties}}</td>
+        <td>{{team.loses}}</td>
+        <td>{{team.puntos}}</td>
+        <td>
+          <a routerLink="/teams/{{team.id}}" (click)='edit(team.id)' class="btn btn-primary">
+            Editar
+          </a>
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+
+
