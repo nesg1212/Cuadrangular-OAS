@@ -1,4 +1,4 @@
-# OASPRUEBA
+# CUADRANGULAS OAS
 Cuadrangular-OAS para prueba técnica
 # Descripción del programa 
 
