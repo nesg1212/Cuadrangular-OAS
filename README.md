@@ -5,7 +5,7 @@ Cuadrangular-OAS para prueba técnica
 Este desarrollo consta de la comunicación con base de datos llamada teams y el front-end, permitiendo registrar varios equipos y editarlos posteriormente. La edición consta de actualizar el numero de partidos ganados, empatados y perdidos; para asi calcular el puntaje de cada equipo y organizarlos de menor a mayo basandose en este. La aplicacion tambien permite borrar un equipo de ser necesario.
 
 # Dependencias
-: 
+
   - Angular cli
   - Node.js
   - Typescript
