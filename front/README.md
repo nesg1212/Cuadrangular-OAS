@@ -1,27 +1,31 @@
-# Front
+# OASPRUEBA
+Cuadrangular-OAS para prueba técnica
+# Descripción del programa 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+Este desarrollo consta de la comunicación con base de datos llamada teams y el front-end, permitiendo registrar varios equipos y editarlos posteriormente. La edición consta de actualizar el numero de partidos ganados, empatados y perdidos; para asi calcular el puntaje de cada equipo y organizarlos de menor a mayo basandose en este. La aplicacion tambien permite borrar un equipo de ser necesario.
 
-## Development server
+# Dependencias
+: 
+  - Angular cli
+  - Node.js
+  - Typescript
+  - Xampp/MYSQL
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Ejecución
 
-## Code scaffolding
+1. Para realizar la ejecución de la aplicación, primero se debe conectar a una base de datos generada en MYSQL, para lo que se debe ejecutar el comando:
+- mysql -u root, o en su defecto el usuario de la base de datos (este proyecto fue implementado usando Xampp con MariaDB), el archivo para generar la base de datos se encuentra en la carpeta database, archivo database.sql, Se debe utilizar este codigo en el entorno mysql deseado, ya sea conectandose por consola o por interfaz. Una vez creada y conectada la base de datos local se puede acceder a las funcionalidades de la página.
+2. Desde la ubicación de server, se deben ejecutar los comandos npm run build y npm run dev abriendo terminales independientes.
+3. Para conectar la aplicación con el servidor, y desplegarla en el navegador, se ejecuta en otra consola el comando ng serve, que asigna el puerto 4200 del localhost a la aplicación, http://localhost:4200/. Desde allí se podrá acceder a las diferentes opciones de la app.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+# Navegación
+Al iniciar la aplicacion se despliega la ventana de resultados, donde se mostraran las estadisticas de los equipos registrados.
+![alt text](https://github.com/nesg1212/Cuadrangular-OAS/blob/main/resultados.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para registrar equipos pulse en el botón registro en la parte superior derecha. Se desplegara un formulario para registrar el nombre del equipo, en este proceso se asignaran todas sus estadisticas en cero.
+![Ingreso](https://github.com/nesg1212/Cuadrangular-OAS/blob/main/Registro.png)
 
-## Running unit tests
+Para ingresar los resultados de los partidos puede registrar las victorias, derrotas o empates de cada equipo dando clic en su respectivo botón editar. En esta pestaña se desplegara un formulario con los datos actuales del equipo, puede actualizar o eliminar el equipo.
+![alt text](https://github.com/nesg1212/Cuadrangular-OAS/blob/main/Editar.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
