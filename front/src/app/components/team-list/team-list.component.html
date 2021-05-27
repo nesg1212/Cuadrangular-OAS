@@ -1,0 +1,9 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nombre del equipo</label>
+      <input name = "texto" type="text" class="form-control"  aria-describedby="emailHelp" [(ngModel)]="team.name">
+      <div class="form-text">El nombre del equipo no puede estar vacio</div>
+    </div>
+    
+    <button (click)=add() routerLink="/teams"  type="submit" class="btn btn-primary">REGISTRAR</button>
+  </form>

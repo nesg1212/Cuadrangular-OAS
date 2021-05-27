@@ -1,0 +1,19 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nombre del equipo</label>
+      <input name = "texto" type="text" class="form-control"  aria-describedby="emailHelp"   [(ngModel)]=data[0].name >
+      <div class="form-text">El nombre del equipo no puede estar vacio</div>
+      <label for="exampleInputEmail1" class="form-label">Partidos ganados</label>
+      <input name = "d" type="number" class="form-control"  aria-describedby="emailHelp" [(ngModel)]=data[0].wins >
+      <label for="exampleInputEmail1" class="form-label">Partidos empatados</label>
+      <input name = "te" type="number" class="form-control"  aria-describedby="emailHelp" [(ngModel)]=data[0].ties>
+      <label for="exampleInputEmail1" class="form-label">Partidos perdidos</label>
+      <input name = "textod" type="number" class="form-control"  aria-describedby="emailHelp" [(ngModel)]=data[0].loses>
+      
+    </div>
+    
+    <button (click)="update()"  routerLink="/teams" class="btn btn-primary">ACTUALIZAR</button>
+   
+    <button (click)="delete()" style="margin: 10px;" routerLink="/teams" class="btn btn-primary">ELIMINAR</button>
+    
+  </form>
